@@ -1,0 +1,14 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: kafkaevent
+  namespace: default
+spec:
+  type: bindings.kafka
+  metadata:
+  - name: brokers
+    value: "my-kafka:9092"
+  - name: topics
+    value: "A"
+  - name: consumerGroup
+    value: node-subscriber

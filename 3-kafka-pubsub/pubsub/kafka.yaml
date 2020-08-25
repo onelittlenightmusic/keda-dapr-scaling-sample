@@ -1,0 +1,20 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: pubsub
+spec:
+  type: pubsub.kafka
+  metadata:
+      # Kafka broker connection setting
+    - name: brokers
+      # Comma separated list of kafka brokers
+      value: "my-kafka.default.svc.cluster.local:9092"
+      # Enable auth. Default is "false"
+    - name: authRequired
+      value: "false"
+    #   # Only available is authRequired is set to true
+    # - name: saslUsername
+    #   value: <username>
+    #   # Only available is authRequired is set to true
+    # - name: saslPassword
+    #   value: <password>
