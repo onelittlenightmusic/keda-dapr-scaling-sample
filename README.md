@@ -41,7 +41,7 @@ We can confirm that both consumer groups of `python-subscriber` and `node-subscr
 
 ## Scale up
 
-Send event from `http://reactform.127.0.0.1.xip.io:31500/`.
+Send event from `http://reactform.127.0.0.1.xip.io:31502/`.
 
 ![](img/2020-08-13-01-14-41.png)
 
